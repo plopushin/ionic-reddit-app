@@ -19,6 +19,10 @@
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
+    <script src="lib/moment/moment.js"></script>
+    <script src="lib/moment/locale/de.js"></script>
+    <script src="lib/angular-moment/angular-moment.js"></script>
+
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
 
@@ -39,7 +43,10 @@
             <img ng-src="{{story.thumbnail}}" 
             ng-if="story.thumbnail.startsWith('http')">
             <h2 class="story-title">{{story.title}}</h2>
-            <p>{{story.domain}}</p>
+            <p>
+             <span am-time-ago="message.time"></span>
+              -
+             {{story.domain}}</p>
           </a>
           </div>
         </div>

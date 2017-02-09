@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 
-angular.module('myreddit', ['ionic'])
+angular.module('myreddit', ['ionic', 'angularMoment'])
 
 .controller('RedditCtrl', function($http, $scope) {
 
@@ -36,4 +36,3 @@ angular.module('myreddit', ['ionic'])
   });
 })
 
-//source: https://www.youtube.com/watch?v=vkKsB6TOWOA&ab_channel=MirkoNasato
