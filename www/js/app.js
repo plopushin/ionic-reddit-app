@@ -35,3 +35,5 @@ angular.module('myreddit', ['ionic'])
     }
   });
 })
+
+//source: https://www.youtube.com/watch?v=vkKsB6TOWOA&ab_channel=MirkoNasato
